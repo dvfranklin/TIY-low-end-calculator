@@ -75,6 +75,8 @@ public class Calculator {
             System.out.println("Your answer is: " + answer);
             System.out.println();
 
+            // reset booleans so new numbers can be entered
+
             validFirstNum = false;
             validSecondNum = false;
             validOperator = false;
