@@ -6,6 +6,7 @@ public class Calculator {
         // initialize Scanner object
         Scanner input = new Scanner(System.in);
 
+        // initialize all variables to give them global scope
         double firstDouble = 0;
         double secondDouble = 0;
         double answer = 0;
@@ -17,7 +18,7 @@ public class Calculator {
         // infinite while loop, requires user to ctrl+c to break
         while(true) {
 
-            // get first operator - will loop until a valid number was entered
+            // get first operand - will loop until a valid number was entered
 
             System.out.println("Please enter a number: ");
 
@@ -33,7 +34,7 @@ public class Calculator {
             }
 
 
-            // get operator
+            // get operator, requires input to be one of + - * /
 
             while (!validOperator) {
                 System.out.println("Please enter an operation (+ - * /): ");
